@@ -101,7 +101,7 @@ Nᴀᴍᴇ - {}</b>"""
 
 <b>📥 Download : </b> <code>{}</code>
 
-<b>🚸 Nᴏᴛᴇ : LINK WON'T EXPIRE TILL I DELETE </b>"""
+<b>🚸 Nᴏᴛᴇ : LINK EXPIRE 24 Hours </b>"""
 
     VERIFICATION_TEXT = """<b>👋 ʜᴇʏ {},
 
