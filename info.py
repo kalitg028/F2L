@@ -32,10 +32,10 @@ HOW_TO_VERIFY = environ.get('HOW_TO_VERIFY', 'https://t.me/How_To_Download_MVS/1
 HOW_TO_OPEN = environ.get('HOW_TO_OPEN', 'https://t.me/How_To_Download_MVS/10')  # File access guide link
 
 # ✅ Feature Toggles (True/False)
-VERIFY = environ.get("VERIFY", True)  # Enable user verification
+VERIFY = environ.get("VERIFY", False)  # Enable user verification
 FSUB = environ.get("FSUB", True)  # Force Subscribe feature
-ENABLE_LIMIT = environ.get("ENABLE_LIMIT", True)  # Enable file limits
-BATCH_VERIFY = environ.get("BATCH_VERIFY", True)  # Verify files in batch
+ENABLE_LIMIT = environ.get("ENABLE_LIMIT", False)  # Enable file limits
+BATCH_VERIFY = environ.get("BATCH_VERIFY", False)  # Verify files in batch
 IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', False))  # Enable channel shortlink creation
 MAINTENANCE_MODE = environ.get("MAINTENANCE_MODE", False)  # Put bot in maintenance
 PROTECT_CONTENT = environ.get('PROTECT_CONTENT', False)  # Enable content protection
