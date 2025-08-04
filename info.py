@@ -11,15 +11,15 @@ API_HASH = environ.get('API_HASH', '')  # Telegram API Hash
 BOT_TOKEN = environ.get('BOT_TOKEN', '')  # Telegram Bot Token
 
 # 👑, Channels & Logs
-BIN_CHANNEL = int(environ.get("BIN_CHANNEL", '-1001973960964'))  # File storage channel
-LOG_CHANNEL = int(environ.get("LOG_CHANNEL", '-1002110971750'))  # General log channel
-PREMIUM_LOGS = int(environ.get("PREMIUM_LOGS", '-1002227216574'))  # Premium user actions log
-VERIFIED_LOG = int(environ.get('VERIFIED_LOG', '-1002227216574'))  # Verified user actions log
-SUPPORT_GROUP = int(environ.get("SUPPORT_GROUP", "-1002028053413"))
+BIN_CHANNEL = int(environ.get("BIN_CHANNEL", '-1001796953496'))  # File storage channel
+LOG_CHANNEL = int(environ.get("LOG_CHANNEL", '-1002280543107'))  # General log channel
+PREMIUM_LOGS = int(environ.get("PREMIUM_LOGS", '-1002635844390'))  # Premium user actions log
+VERIFIED_LOG = int(environ.get('VERIFIED_LOG', '-1002607653825'))  # Verified user actions log
+SUPPORT_GROUP = int(environ.get("SUPPORT_GROUP", "-1002457492650"))
 
 # add admin IDs 11111 2222 3333 and add auth channel IDs -100XXX -100XXX -100XXX
-ADMINS = list(map(int, environ.get('ADMINS', '5977931010').split()))  # List of admin user IDs
-AUTH_CHANNEL = list(map(int, environ.get("AUTH_CHANNEL", "-1002102037760 -1002012150170").split()))  # Allowed channels for authorization
+ADMINS = list(map(int, environ.get('ADMINS', '6004928770').split()))  # List of admin user IDs
+AUTH_CHANNEL = list(map(int, environ.get("AUTH_CHANNEL", "-1002327045567").split()))  # Allowed channels for authorization
 
 # username add without @
 OWNER_USERNAME = environ.get("OWNER_USERNAME", 'Indian_MV_Admin_Bot')  # Owner's username
@@ -53,9 +53,9 @@ DB_NAME = environ.get('DATABASE_NAME', "cluster0")  # MongoDB database name
 # 📸 all Media (Images)
 QR_CODE = environ.get('QR_CODE', 'https://envs.sh/US-.jpg')  # QR Code image
 VERIFY_IMG = environ.get("VERIFY_IMG", "https://graph.org/file/1669ab9af68eaa62c3ca4.jpg")  # Verify success image
-AUTH_PICS = environ.get('AUTH_PICS', 'https://envs.sh/AwV.jpg')  # Auth step image
+AUTH_PICS = environ.get('AUTH_PICS', 'https://envs.sh/EP4.jpg')  # Auth step image
 PICS = environ.get('PICS', 'https://envs.sh/EPY.jpg')  # Default info image
-FILE_PIC = environ.get('FILE_PIC', 'https://i.ibb.co/bj4My0bW/photo-2025-07-21-02-15-21-7529360175656861700.jpg') # file image 
+FILE_PIC = environ.get('FILE_PIC', 'https://envs.sh/EPR.jpg') # file image 
 
 # 📝 File Captions
 FILE_CAPTION = environ.get('FILE_CAPTION', f"{script.CAPTION}")  # Caption for single file
