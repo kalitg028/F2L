@@ -37,7 +37,7 @@ async def start(client, message):
             InlineKeyboardButton('• ʜᴇʟᴘ •', callback_data='help'),
             InlineKeyboardButton('• ᴀʙᴏᴜᴛ •', callback_data='about')
         ],[
-            InlineKeyboardButton('✨ ʙᴜʏ ꜱᴜʙꜱᴄʀɪᴘᴛɪᴏɴ : ʀᴇᴍᴏᴠᴇ ᴀᴅꜱ ✨', callback_data="premium_info")
+           # InlineKeyboardButton('✨ ʙᴜʏ ꜱᴜʙꜱᴄʀɪᴘᴛɪᴏɴ : ʀᴇᴍᴏᴠᴇ ᴀᴅꜱ ✨', callback_data="premium_info")
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
@@ -191,7 +191,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('• ʜᴇʟᴘ •', callback_data='help'),
             InlineKeyboardButton('• ᴀʙᴏᴜᴛ •', callback_data='about')
         ],[
-            InlineKeyboardButton('✨ ʙᴜʏ ꜱᴜʙꜱᴄʀɪᴘᴛɪᴏɴ : ʀᴇᴍᴏᴠᴇ ᴀᴅꜱ ✨', callback_data="premium_info")
+           # InlineKeyboardButton('✨ ʙᴜʏ ꜱᴜʙꜱᴄʀɪᴘᴛɪᴏɴ : ʀᴇᴍᴏᴠᴇ ᴀᴅꜱ ✨', callback_data="premium_info")
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
