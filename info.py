@@ -6,9 +6,9 @@ from Script import script  # Custom script file with caption & other settings
 # 🚀 Bot Session and Token Information
 SESSION = environ.get('SESSION', 'Webavbot')  # Pyrogram client session name
 
-API_ID = int(environ.get('API_ID', '12300656'))  # Telegram API ID
-API_HASH = environ.get('API_HASH', 'd927c13beaaf5110f5b7c071273')  # Telegram API Hash
-BOT_TOKEN = environ.get('BOT_TOKEN', '672782:AAE3VrD2SewKmu6ytwU4H1vRtfc')  # Telegram Bot Token
+API_ID = int(environ.get('API_ID', ''))  # Telegram API ID
+API_HASH = environ.get('API_HASH', '')  # Telegram API Hash
+BOT_TOKEN = environ.get('BOT_TOKEN', '')  # Telegram Bot Token
 
 # 👑, Channels & Logs
 BIN_CHANNEL = int(environ.get("BIN_CHANNEL", '-1001973960964'))  # File storage channel
@@ -22,14 +22,14 @@ ADMINS = list(map(int, environ.get('ADMINS', '5977931010').split()))  # List of 
 AUTH_CHANNEL = list(map(int, environ.get("AUTH_CHANNEL", "-1002102037760 -1002012150170").split()))  # Allowed channels for authorization
 
 # username add without @
-OWNER_USERNAME = environ.get("OWNER_USERNAME", 'BOT_OWNER26')  # Owner's username
-BOT_USERNAME = environ.get("BOT_USERNAME", 'AV_F2L_BOT')  # Bot's username
+OWNER_USERNAME = environ.get("OWNER_USERNAME", 'Indian_MV_Admin_Bot')  # Owner's username
+BOT_USERNAME = environ.get("BOT_USERNAME", 'FileToLink_MVBot')  # Bot's username
 
 # 🔗 Channel & Support Links
-CHANNEL = environ.get('CHANNEL', 'https://t.me/AV_BOTz_UPDATE')  # Updates channel
-SUPPORT = environ.get('SUPPORT', 'https://t.me/AV_SUPPORT_GROUP')  # Support group
-HOW_TO_VERIFY = environ.get('HOW_TO_VERIFY', 'https://t.me/')  # Verification guide link
-HOW_TO_OPEN = environ.get('HOW_TO_OPEN', 'https://t.me/')  # File access guide link
+CHANNEL = environ.get('CHANNEL', 'https://t.me/Indian_MV')  # Updates channel
+SUPPORT = environ.get('SUPPORT', 'https://t.me/Indian_MV_Group')  # Support group
+HOW_TO_VERIFY = environ.get('HOW_TO_VERIFY', 'https://t.me/How_To_Download_MVS/10')  # Verification guide link
+HOW_TO_OPEN = environ.get('HOW_TO_OPEN', 'https://t.me/How_To_Download_MVS/10')  # File access guide link
 
 # ✅ Feature Toggles (True/False)
 VERIFY = environ.get("VERIFY", False)  # Enable user verification
@@ -43,18 +43,18 @@ PUBLIC_FILE_STORE = environ.get('PUBLIC_FILE_STORE', True)  # Public or private 
 BATCH_PROTECT_CONTENT = environ.get('BATCH_PROTECT_CONTENT', False)  # Batch file protection
 
 # 🔗 Shortlink Configuration
-SHORTLINK_URL = environ.get('SHORTLINK_URL', 'techvjlink.site')  # Shortener site
-SHORTLINK_API = environ.get('SHORTLINK_API', 'd73e70a35dc3877fa14afbf51fa8ec312c94780c')  # API key for shortlink
+SHORTLINK_URL = environ.get('SHORTLINK_URL', 'just2earn.com')  # Shortener site
+SHORTLINK_API = environ.get('SHORTLINK_API', 'ca9136b614c68b8310a40185d64f808baf1f7d5d')  # API key for shortlink
 
 # 💾 MongoDB Connection Information
-DB_URL = environ.get('DATABASE_URI', "mongodb+srv://aman:aman@cluster0p1.mongodb.net/?rites=truity&appName=Cluster0")  # MongoDB connection URI
+DB_URL = environ.get('DATABASE_URI', "")  # MongoDB connection URI
 DB_NAME = environ.get('DATABASE_NAME', "cluster0")  # MongoDB database name
 
 # 📸 all Media (Images)
-QR_CODE = environ.get('QR_CODE', 'https://graph.org/file/6afb4093d5ec5c4176979.jpg')  # QR Code image
+QR_CODE = environ.get('QR_CODE', 'https://envs.sh/US-.jpg')  # QR Code image
 VERIFY_IMG = environ.get("VERIFY_IMG", "https://graph.org/file/1669ab9af68eaa62c3ca4.jpg")  # Verify success image
 AUTH_PICS = environ.get('AUTH_PICS', 'https://envs.sh/AwV.jpg')  # Auth step image
-PICS = environ.get('PICS', 'https://envs.sh/_pM.jpg')  # Default info image
+PICS = environ.get('PICS', 'https://envs.sh/EPY.jpg')  # Default info image
 FILE_PIC = environ.get('FILE_PIC', 'https://i.ibb.co/bj4My0bW/photo-2025-07-21-02-15-21-7529360175656861700.jpg') # file image 
 
 # 📝 File Captions
@@ -67,14 +67,14 @@ PING_INTERVAL = int(environ.get("PING_INTERVAL", "1200"))  # Ping interval in se
 SLEEP_THRESHOLD = int(getenv('SLEEP_THRESHOLD', '60'))  # Threshold for sleep delay
 RATE_LIMIT_TIMEOUT = int(environ.get("RATE_LIMIT_TIMEOUT", "600"))  # Rate limit time (10 mins)
 MAX_FILES = int(environ.get("MAX_FILES", "5"))  # Max files allowed per user
-VERIFY_EXPIRE = int(environ.get('VERIFY_EXPIRE', 60))  # Time (in hours) after which verification expires
+VERIFY_EXPIRE = int(environ.get('VERIFY_EXPIRE', 720))  # Time (in hours) after which verification expires
 
 # ⚙️ Worker Configuration
 WORKERS = int(getenv('WORKERS', '4'))  # Number of async workers
 MULTI_CLIENT = False  # Enable multi-client handling (if needed)
 
 # 🔧 App/Heroku Configuration
-name = str(environ.get('name', 'avbotz'))  # Project name
+name = str(environ.get('name', 'indianmv'))  # Project name
 APP_NAME = None
 if 'DYNO' in environ:
     ON_HEROKU = True
